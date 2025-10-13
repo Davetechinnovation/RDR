@@ -1,9 +1,9 @@
 import React from 'react'
 
-function page () {
+function page() {
   return (
     <div>
-      <p>hi</p>
+      
     </div>
   )
 }
