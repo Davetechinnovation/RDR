@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { usePathname } from "next/navigation"; 
+import { usePathname } from "next/navigation";
+import {Menu } from "lucide-react";
 
 // A reusable component for the triangle to avoid repeating code.
 const ActiveIndicator = () => (
@@ -36,8 +37,26 @@ function Navbar() {
   ];
 
   return (
-    <div className="w-full relative ">
-      <div className="flex justify-between items-center md:p-8 ">
+    <div className="w-full relative z-50 ">
+      {/*Navbar on smaller screen */}
+
+      <div className="flex justify-between items-center gap-3 p-4 sm:hidden ">
+        <Menu />
+        <div className="flex items-center gap-3">
+          <div>
+            <img
+              src="/MagnifyingGlass.png"
+              alt="Search"
+              className="w-[25px] cursor-pointer "
+            />
+          </div>
+          <button className="bg-[#B12D31] px-4 py-2 rounded-lg hover:scale-105 hover:bg-[#b12d31f3] duration-300 transition-all text-white cursor-pointer ">
+            Contact Us
+          </button>
+        </div>
+      </div>
+
+      <div className=" justify-between items-center md:p-8  hidden sm:flex ">
         <div>
           <img
             src="/rdr logo.webp"
@@ -72,7 +91,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className="border-2 bg-white border-[#B12D31] px-5 py-3 rounded-lg absolute md:-bottom-12 left-1/2 z-50 w-[82%] -translate-x-1/2  ">
+      <div className="border-2  hidden sm:block bg-white border-[#B12D31] px-5 py-3 rounded-lg absolute md:-bottom-12 left-1/2 z-50 w-[82%] -translate-x-1/2  ">
         <div className=" flex justify-between items-center ">
           <div>
             {/* 6. Map over the navItems array to render the list dynamically */}
@@ -80,7 +99,8 @@ function Navbar() {
               {navItems.map((item) => {
                 // Determine if this item is the active page (compare normalized values)
                 const hrefNorm = item.href.toLowerCase();
-                const isActive = normalizedPath === (hrefNorm === "/home" ? "/" : hrefNorm);
+                const isActive =
+                  normalizedPath === (hrefNorm === "/home" ? "/" : hrefNorm);
                 // Determine if this item is currently being hovered
                 const isHovered = hoveredPath === item.href;
 
