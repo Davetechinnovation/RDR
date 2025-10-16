@@ -203,7 +203,7 @@ function page() {
       </div>
 
       <div className="sm:py-25 py-10 ">
-        <div className="grid sm:grid-cols-2 grid-cols-1 items-center gap-20 sm:px-10 px-3">
+        <div className="grid sm:grid-cols-2 grid-cols-1 items-center sm:gap-20 gap-10 sm:px-10 px-3">
           <img src="/joined.webp" alt="" />
           <div className="flex flex-col justify-between sm:gap-14 gap-5 ">
             <div className="flex flex-col sm:gap-8 gap-4">
