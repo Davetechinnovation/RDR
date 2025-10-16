@@ -40,7 +40,7 @@ function Navbar() {
     <div className="w-full relative z-50 ">
       {/*Navbar on smaller screen */}
 
-      <div className="flex justify-between items-center gap-3 p-4 sm:hidden ">
+      <div className="flex justify-between items-center gap-3 p-4 md:hidden ">
         <Menu />
         <div className="flex items-center gap-3">
           <div>
@@ -56,7 +56,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className=" justify-between items-center md:p-8  hidden sm:flex ">
+      <div className=" justify-between items-center lg:p-8 md:py-8 md:px-4  hidden md:flex ">
         <div>
           <img
             src="/rdr logo.webp"
@@ -64,7 +64,7 @@ function Navbar() {
             className="md:w-[139px] w-[120px] "
           />
         </div>
-        <div className="flex  justify-between md:gap-20 gap-5 ">
+        <div className="flex  justify-between lg:gap-20 md:gap-7 gap-5 ">
           <div className="flex items-center gap-2">
             <img src="/UserRectangle.webp " alt="" />
             <p className="font-medium flex flex-col font-[Poppins]  ">
@@ -91,7 +91,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className="border-2  hidden sm:block bg-white border-[#B12D31] px-5 py-3 rounded-lg absolute md:-bottom-12 left-1/2 z-50 w-[82%] -translate-x-1/2  ">
+      <div className="border-2  hidden md:block bg-white border-[#B12D31] px-5 py-3 rounded-lg absolute md:-bottom-12 left-1/2 z-50 w-[82%] -translate-x-1/2  ">
         <div className=" flex justify-between items-center ">
           <div>
             {/* 6. Map over the navItems array to render the list dynamically */}
