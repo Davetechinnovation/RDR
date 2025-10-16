@@ -14,10 +14,9 @@ function Navbar() {
   // 3. Get the current page's path (e.g., "/", "/about", "/services")
   const pathname = usePathname();
 
-  // Normalize the pathname so `/home` and `/` are considered the same route
+  // Normalize the pathname
   const normalizedPath = (() => {
     const p = (pathname || "").toLowerCase();
-    if (p === "/home") return "/"; // treat /home as /
     if (p === "") return "/";
     // remove trailing slash for consistency (but keep root)
     return p.endsWith("/") && p !== "/" ? p.slice(0, -1) : p;
@@ -37,7 +36,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="w-full relative z-50 ">
+    <div className="w-full relative z-100 ">
       {/*Navbar on smaller screen */}
 
       <div className="flex justify-between items-center gap-3 p-4 md:hidden ">
@@ -99,8 +98,7 @@ function Navbar() {
               {navItems.map((item) => {
                 // Determine if this item is the active page (compare normalized values)
                 const hrefNorm = item.href.toLowerCase();
-                const isActive =
-                  normalizedPath === (hrefNorm === "/home" ? "/" : hrefNorm);
+                const isActive = normalizedPath === hrefNorm;
                 // Determine if this item is currently being hovered
                 const isHovered = hoveredPath === item.href;
 
@@ -127,7 +125,7 @@ function Navbar() {
           <div className="flex items-center gap-3">
             <div>
               <img
-                src="/MagnifyingGlass.png"
+                src="/MagnifyingGlass.webp"
                 alt="Search"
                 className="w-[32px] cursor-pointer "
               />
