@@ -9,7 +9,7 @@ function page() {
           src="/rdr.webp"
           alt=""
           className="brightness-40 md:h-auto h-[375px] object-cover "
-        /> 
+        />
 
         <div className="absolute top-1/2 -translate-y-1/2 lg:left-16 sm:left-8 px-4 text-white ">
           <h2 className="font-bold lg:text-[58px] md:text-[45px] sm:text-[32px] text-[28px] font-[Rubik] max-w-[830px] lg:leading-[68px] ">
