@@ -30,7 +30,7 @@ function page() {
       <div className="sm:flex  ">
         <div>
           <img
-            src="/Rectangle.png"
+            src="/Rectangle.webp"
             alt=""
             className="object-cover max-w-[440px] h-full w-full  "
           />
@@ -101,7 +101,7 @@ function page() {
       <div
         className="relative py-10 "
         style={{
-          backgroundImage: "url('/bg.jpg')",
+          backgroundImage: "url('/bg.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -116,12 +116,12 @@ function page() {
             {/* THIS IS THE CORRECTED CONTAINER FOR THE IMAGES */}
             <div className="flex sm:grid sm:grid-cols-3 overflow-x-auto flex-nowrap gap-4 py-4 snap-x snap-mandatory scroll-smooth">
               {[
-                "/img1.jpg",
-                "/img2.jpg",
-                "/img3.jpg",
-                "/img4.jpg",
-                "/img5.jpg",
-                "/img6.jpg",
+                "/img1.webp",
+                "/img2.webp",
+                "/img3.webp",
+                "/img4.webp",
+                "/img5.webp",
+                "/img6.webp",
               ].map((src, index) => (
                 <div
                   key={index}
@@ -145,7 +145,7 @@ function page() {
       </div>
 
       <div>
-        <h2 className="sm:text-[45px] text-[30px] font-bold flex flex-col  text-center justify-center items-center my-3 ">
+        <h2 className="sm:text-[45px] text-[30px] font-bold flex flex-col  text-center justify-center items-center my-10 ">
           Clients Testimonial{" "}
           <span className="w-[53px] bg-[#B12D31] p-[2.5px]  "></span>{" "}
         </h2>
@@ -179,7 +179,9 @@ function page() {
               From planning to execution, their demolition crew was exceptional.
               Everything was completed on time.
             </p>
-            <p className="font-medium pb-7 ">— Angela M., Real Estate Developer</p>
+            <p className="font-medium pb-7 ">
+              — Angela M., Real Estate Developer
+            </p>
           </div>
 
           <div className="shadow-lg shadow-gray-500 px-5 py-2 flex flex-col justify-center items-center ">
@@ -200,9 +202,42 @@ function page() {
         </div>
       </div>
 
-      <div>
-        
+      <div className="sm:py-25 py-10 ">
+        <div className="grid sm:grid-cols-2 grid-cols-1 items-center gap-20 sm:px-10 px-3">
+          <img src="/joined.webp" alt="" />
+          <div className="flex flex-col justify-between sm:gap-14 gap-5 ">
+            <div className="flex flex-col sm:gap-8 gap-4">
+              <h2 className="font-bold text-[25px] sm:text-[30px] md:text-[45px] relative ">
+                Who we are{" "}
+                <span className="w-[53px] bg-[#B12D31] p-[2.5px] absolute -bottom-2 left-0 "></span>{" "}
+              </h2>
+              <p className="text-[#120F0F] py-5 sm:text-[18px] max-w-[540px] ">
+                At RDR General Construction, we are more than just builders we
+                are problem solvers, innovators, and trusted partners in
+                development, construction management, and general contracting.{" "}
+                <br /> <br /> With years of proven experience, our team
+                specializes in asbestos and lead abatement, mold remediation,
+                demolition, and full-scale construction projects. Every project
+                we take on is guided by three core values: safety, quality, and
+                integrity.
+              </p>
+            </div>
+
+            <div className="flex items-center ">
+              <div className="relative cursor-pointer hover:scale-105 hover:bg-[#b12d31ea] duration-300 transition-all ">
+                <button className="bg-[#0883BB] py-3 px-3 text-white relative cursor-pointer duration-300 transition-all ">
+                  Learn More About us{" "}
+                </button>
+                <span className="bg-black absolute -right-6 top-0 h-full flex flex-col justify-center items-center px-2 skew-x-8 ">
+                  <img src="/icon.webp" alt="" className="w-[12px]" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+
     </div>
   );
 }
