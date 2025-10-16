@@ -45,7 +45,7 @@ function Navbar() {
         <div className="flex items-center gap-3">
           <div>
             <img
-              src="/MagnifyingGlass.png"
+              src="/MagnifyingGlass.webp"
               alt="Search"
               className="w-[25px] cursor-pointer "
             />
