@@ -149,7 +149,7 @@ function page() {
           Clients Testimonial{" "}
           <span className="w-[53px] bg-[#B12D31] p-[2.5px]  "></span>{" "}
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 justify-center items-center py-5 sm:gap-10 gap-5 md:px-25 sm:px-10 px-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 justify-center items-center py-5 sm:gap-10 gap-5 md:px-25 sm:px-10 px-5">
           <div className="shadow-lg shadow-gray-500 px-5 py-2 flex flex-col justify-center items-center ">
             <div className="flex gap-3 pt-7">
               <Star className="w-6 h-6" fill="#FFB400" stroke="#FFB400" />
@@ -236,8 +236,6 @@ function page() {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 }
