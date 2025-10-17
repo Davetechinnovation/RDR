@@ -104,27 +104,71 @@ function page() {
         </div>
       </div>
 
-      <div className="min-h-[400px] md:min-h-[500px]  ">
-        <img src="/rectangle 33.png" alt="" className="w-full h-full" />
-        <div className="flex ">
-          <img src="/my dad.png" alt="" className="w-[30%]" />
-          <div className="relative ">
-            <p className="bg-[#5BCBFF] max-w-[382px] p-7 flex flex-col gap-5 relative ">
-              <span className="font-bold text-[22px] "> Our Mission </span>
-              <span>
-                To deliver safe, strong, and sustainable construction solutions
-                while upholding the highest standards of quality, compliance,
-                and client satisfaction.
-              </span>
-            </p>
-            <p className="bg-[green] max-w-[382px] p-7 flex flex-col gap-5 absolute right-0 bottom-0 ">
-              <span className="font-bold text-[22px] "> Our Mission </span>
-              <span>
-                To deliver safe, strong, and sustainable construction solutions
-                while upholding the highest standards of quality, compliance,
-                and client satisfaction.
-              </span>
-            </p>
+      <div className="relative w-full min-h-[600px] lg:overflow-hidden py-12 lg:py-0">
+        {/* --- Background Image (No changes needed) --- */}
+        <img
+          src="/rectangle 33.png"
+          alt="Background of a bridge"
+          className="absolute inset-0 w-full h-full object-cover -z-10"
+        />
+
+        {/* 
+    MOBILE (default): A standard block, centered with margin auto.
+    DESKTOP (lg): Becomes the absolutely positioned centered box.
+  */}
+        <div
+          className="relative w-full max-w-7xl mx-auto px-4 
+               lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2"
+        >
+          {/* 
+      MOBILE (default): Stacks vertically.
+      DESKTOP (lg): Side-by-side with a large gap.
+    */}
+          <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center gap-8 lg:gap-16">
+            {/* --- LEFT COLUMN (Image and Caption) --- */}
+            <div className="flex flex-col items-center gap-3">
+              {/* 
+          MOBILE (default): Smaller image width.
+          DESKTOP (lg): Your original fixed width.
+        */}
+              <img
+                src="/my dad.png"
+                alt="Engr. (Dr.) R.U. ODOH"
+                className="w-[280px] lg:w-[350px] h-auto rounded-lg shadow-xl"
+              />
+              <p className="text-center font-semibold text-gray-700 max-w-[280px] lg:max-w-none">
+                Engr. (Dr.) R.U. ODOH (Vice President/CEO)
+              </p>
+            </div>
+            <div className="relative w-full h-[420px] lg:w-[732px] lg:h-[350px]">
+              <p
+                className="bg-[#5BCBFF] p-6 flex flex-col gap-4 rounded-md shadow-lg
+                     absolute top-0 left-0 w-4/5
+                     lg:p-7 lg:gap-5 lg:w-[382px]"
+              >
+                <span className="font-bold text-xl lg:text-[22px]">
+                  Our Mission
+                </span>
+                <span className="text-sm lg:text-base">
+                  To deliver safe, strong, and sustainable construction
+                  solutions while upholding the highest standards of quality,
+                  compliance, and client satisfaction.
+                </span>
+              </p>
+              <p
+                className="bg-[#3CD679] p-6 flex flex-col gap-4 rounded-md shadow-lg absolute top-[200px] right-0 w-4/5 lg:p-7 lg:gap-5 lg:w-[382px] lg:top-16 lg:left-[350px]"
+              >
+                <span className="font-bold text-xl lg:text-[22px]">
+                  Our Vision
+                </span>
+                <span className="text-sm lg:text-base">
+                  To be a leading construction and remediation company
+                  recognized for our commitment to safety, excellence, and
+                  community well-being, creating environments that support
+                  future generations.
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
