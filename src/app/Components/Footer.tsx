@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -12,16 +13,16 @@ function Footer() {
             do. We believe every project should stand the test of time
           </p>
           <div className="flex gap-2 items-center">
-            <div className="bg-[#DF383D] w-[48px] h-[48px] rounded-full flex justify-center items-center ">
+            <div className="bg-[#DF383D] sm:w-[48px] sm:h-[48px] w-[38px] h-[38px] rounded-full flex justify-center items-center ">
               <img src="/facebook.png" alt="" className="w-[19px]" />
             </div>
-            <div className="bg-[#DF383D] w-[48px] h-[48px] rounded-full flex justify-center items-center ">
+            <div className="bg-[#DF383D] sm:w-[48px] sm:h-[48px] w-[38px] h-[38px] rounded-full flex justify-center items-center ">
               <img src="/x.png" alt="" className="w-[17px]" />
             </div>
-            <div className="bg-[#DF383D] w-[48px] h-[48px] rounded-full flex justify-center items-center ">
+            <div className="bg-[#DF383D] sm:w-[48px] sm:h-[48px] w-[38px] h-[38px] rounded-full flex justify-center items-center ">
               <img src="/linkedin.png" alt="" className="w-[17px]" />
             </div>
-            <div className="bg-[#DF383D] w-[48px] h-[48px] rounded-full flex justify-center items-center ">
+            <div className="bg-[#DF383D] sm:w-[48px] sm:h-[48px] w-[38px] h-[38px] rounded-full flex justify-center items-center ">
               <img src="/instagram.png" alt="" className="w-[17px]" />
             </div>
           </div>
@@ -30,11 +31,12 @@ function Footer() {
           <h2 className="sm:text-[22px] text-[19px] font-extrabold underline font-[exo] ">
             Quick Link
           </h2>
-          <div className="flex flex-col gap-5  py-2">
-            <p>About</p>
-            <p>Services</p>
-            <p>Projects</p>
-            <p>Contact Us</p>
+          <div className="flex flex-col gap-2  py-2">
+            <Link href="/"> <p>Home</p></Link>
+            <Link href="/about"> <p>About</p></Link>
+            <Link href="/services"> <p>Services</p></Link>
+            <Link href="/projects"> <p>Projects</p></Link>
+            <Link href="/contact"> <p>Contact Us</p></Link>
           </div>
         </div>
 
@@ -68,9 +70,6 @@ function Footer() {
             © 2025 RDR CONTRACTING GROUP INC. www.maragroup18.com. All Rights
             Reserved.
           </p>
-        </div>
-        <div>
-          <p className="bg-white ">hi</p>
         </div>
       </div>
     </div>
