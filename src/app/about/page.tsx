@@ -12,11 +12,13 @@ function page() {
         </div>
       </div>
 
-      <div className="py-20 px-10 ">
+      <div className="sm:py-20 py-10 sm:px-10 px-5 ">
         <div className="grid sm:grid-cols-2 grid-col2-1 ">
           <div className="flex flex-col justify-between">
             <div>
-              <h2 className="font-bold text-[45px]">Who We Are</h2>
+              <h2 className="font-bold text-[30px] sm:text-[45px]">
+                Who We Are
+              </h2>
               <p className="flex flex-col gap-5 text-[16px] sm:text-[20px] max-w-[509px] py-10 ">
                 <span>
                   At RDR General Construction, we are more than contractors we
@@ -80,24 +82,50 @@ function page() {
         </div>
       </div>
 
-      <div className="relative">
+      <div className="relative min-h-[400px] md:min-h-[600px] flex items-center justify-center">
         <img
           src="/frame.png"
           alt=""
-          className="w-full h-auto brightness-50 object-cover "
+          className="absolute top-0 left-0 w-full h-full object-cover brightness-50"
         />
-        <div className="text-center max-w-[820px] w-full text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
-          <h1 className="font-bold text-[64px] leading-[70px] ">
+
+        <div className="relative z-10 text-center max-w-[820px] text-white px-2">
+          <h1 className="font-bold text-[32px] sm:text-[64px] leading-tight sm:leading-[70px]">
             We’ve Been Building For Over 20 years
           </h1>
-          <p className="text-[22px] py-10">
+          <p className="text-[18px] sm:text-[22px] py-7 sm:py-10">
             Clients choose RDR General Construction because we deliver more than
             just construction we deliver peace of mind. From project planning to
-            completion
+            completion.
           </p>
-          <button className=" text-[16px] sm:text-[22px] bg-[#B12D31] cursor-pointer py-2 px-5 hover:scale-105 hover:bg-[#b12d31ea] transition-all duration-300">
-           Contact Us
+          <button className="text-[16px] sm:text-[22px] bg-[#B12D31] cursor-pointer py-2 px-5 hover:scale-105 hover:bg-[#b12d31d3] transition-all duration-300">
+            Contact Us
           </button>
+        </div>
+      </div>
+
+      <div className="min-h-[400px] md:min-h-[500px]  ">
+        <img src="/rectangle 33.png" alt="" className="w-full h-full" />
+        <div className="flex ">
+          <img src="/my dad.png" alt="" className="w-[30%]" />
+          <div className="relative ">
+            <p className="bg-[#5BCBFF] max-w-[382px] p-7 flex flex-col gap-5 relative ">
+              <span className="font-bold text-[22px] "> Our Mission </span>
+              <span>
+                To deliver safe, strong, and sustainable construction solutions
+                while upholding the highest standards of quality, compliance,
+                and client satisfaction.
+              </span>
+            </p>
+            <p className="bg-[green] max-w-[382px] p-7 flex flex-col gap-5 absolute right-0 bottom-0 ">
+              <span className="font-bold text-[22px] "> Our Mission </span>
+              <span>
+                To deliver safe, strong, and sustainable construction solutions
+                while upholding the highest standards of quality, compliance,
+                and client satisfaction.
+              </span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
