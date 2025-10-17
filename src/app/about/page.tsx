@@ -12,7 +12,28 @@ function page() {
         </div>
       </div>
 
-      <div></div>
+      <div className="py-20">
+        <div className="grid grid-cols-2 px-5">
+          <div>
+            <h2 className="font-bold text-[45px]">Who We Are</h2>
+            <p className="flex flex-col gap-5 text-[16px] sm:text-[20px] max-w-[509px] ">
+              <span>
+                At RDR General Construction, we are more than contractors we are
+                builders of trust, safety, and long-term value.
+              </span>
+              <span className="py-5">
+                Our specialty lies in asbestos and lead abatement, mold
+                remediation, demolition services, and complete construction
+                solutions. Whether it’s residential, commercial, or industrial
+                projects, our mission is to provide reliable, cost-effective,
+                and sustainable outcomes for every client.
+              </span>
+            </p>
+          </div>
+
+          <div></div>
+        </div>
+      </div>
     </div>
   );
 }
