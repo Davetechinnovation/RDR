@@ -6,7 +6,7 @@ function Footer() {
       <img src="/rdr logo.webp" alt="" />
       <div className="flex flex-wrap justify-between gap-7 ">
         <div>
-          <p className="max-w-[412px] py-5 ">
+          <p className="max-w-[412px] py-5 text-[14px] sm:text-[16px] ">
             At RDR General Construction, Building Safe, Strong, and Sustainable
             Spaces is more than a tagline it’s the foundation of everything we
             do. We believe every project should stand the test of time
@@ -27,7 +27,7 @@ function Footer() {
           </div>
         </div>
         <div>
-          <h2 className="text-[22px] font-extrabold underline font-[exo] ">
+          <h2 className="sm:text-[22px] text-[19px] font-extrabold underline font-[exo] ">
             Quick Link
           </h2>
           <div className="flex flex-col gap-5  py-2">
@@ -39,23 +39,23 @@ function Footer() {
         </div>
 
         <div>
-          <h2 className="text-[22px] font-extrabold underline font-[exo] ">
+          <h2 className="sm:text-[22px] text-[19px] font-extrabold underline font-[exo] ">
             Contact Info
           </h2>
           <div className="flex flex-col gap-3 py-2 ">
-            <p>
-              <span className="text-[#FFCED0] font-bold ">Address:</span>{" "}
+            <p className="text-[14px] sm:text-[16px] ">
+              <span className="text-[#FFCED0] font-bold  ">Address:</span>{" "}
               <span>199-02 LINDEN BLVD, UNIT #3 ST. ALBANS, NY. 11412</span>{" "}
             </p>
-            <p>
+            <p className="text-[14px] sm:text-[16px] ">
               <span className="text-[#FFCED0] font-bold ">Email:</span>{" "}
-              <span>info@rdr.COM</span>{" "}
+              <span>info@rdr.com</span>{" "}
             </p>
-            <p>
+            <p className="text-[14px] sm:text-[16px] ">
               <span className="text-[#FFCED0] font-bold ">Cell Phone:</span>{" "}
               <span>917-795-6392, 6785580685, 347-684-6974</span>{" "}
             </p>
-            <p>
+            <p className="text-[14px] sm:text-[16px] ">
               <span className="text-[#FFCED0] font-bold ">Work Time:</span>{" "}
               <span>Mon-Fri: 08.00 - 16.00</span>{" "}
             </p>
@@ -64,7 +64,7 @@ function Footer() {
       </div>
       <div className="py-5 flex gap-2 justify-between items-center ">
         <div>
-          <p>
+          <p className="text-[14px] sm:text-[16px] ">
             © 2025 RDR CONTRACTING GROUP INC. www.maragroup18.com. All Rights
             Reserved.
           </p>
