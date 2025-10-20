@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 // A reusable component for the triangle to avoid repeating code.
 const ActiveIndicator = () => (
@@ -13,6 +13,14 @@ const ActiveIndicator = () => (
 function Navbar() {
   // 3. Get the current page's path (e.g., "/", "/about", "/services")
   const pathname = usePathname();
+  
+  // State to control mobile menu visibility
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  // Toggle mobile menu
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   // Normalize the pathname
   const normalizedPath = (() => {
@@ -36,11 +44,13 @@ function Navbar() {
   ];
 
   return (
-    <div className="w-full relative z-100 ">
+    <div className="w-full relative z-40 ">
       {/*Navbar on smaller screen */}
 
-      <div className="flex justify-between items-center gap-3 p-4 md:hidden relative ">
-        <Menu />
+      <div className="flex justify-between items-center gap-3 p-4 md:hidden relative bg-white">
+        <button onClick={toggleMobileMenu} className="cursor-pointer">
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
         <div className="flex items-center gap-3">
           <div>
             <img
@@ -54,9 +64,31 @@ function Navbar() {
           </button>
         </div>
 
-        <div className="bg-[#B12D31] w-full fixed z-200 h-[100dvh] top-18 left-0 text-white ">
-          <p>hi</p>
-        </div>
+        {/* Mobile Menu Overlay */}
+        {isMobileMenuOpen && (
+          <div className="bg-[#B12D31] w-full fixed z-50 h-screen top-0 left-0 text-white">
+            <div className="flex justify-between items-center p-4">
+              <h2 className="text-xl font-bold">Menu</h2>
+              <button onClick={toggleMobileMenu} className="cursor-pointer">
+                <X size={24} />
+              </button>
+            </div>
+            <div className="flex flex-col p-4 space-y-4">
+              <Link href="/" onClick={toggleMobileMenu} className="text-lg hover:text-gray-300">
+                Home
+              </Link>
+              <Link href="/about" onClick={toggleMobileMenu} className="text-lg hover:text-gray-300">
+                About
+              </Link>
+              <Link href="/services" onClick={toggleMobileMenu} className="text-lg hover:text-gray-300">
+                Services
+              </Link>
+              <Link href="/contact" onClick={toggleMobileMenu} className="text-lg hover:text-gray-300">
+                Contact
+              </Link>
+            </div>
+          </div>
+        )}
       </div>
 
       <div className=" justify-between items-center lg:p-8 md:py-8 md:px-4  hidden md:flex ">
