@@ -101,7 +101,7 @@ function page() {
       <div
         className="relative py-10 "
         style={{
-          backgroundImage: "url('/bg.webp')",
+          backgroundImage: "url('/bg-1.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

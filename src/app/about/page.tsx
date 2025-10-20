@@ -4,7 +4,7 @@ function page() {
   return (
     <div>
       <div className="relative">
-        <img src="/bg.png" alt="" className="brightness-50 w-full h-auto " />
+        <img src="/bg.webp" alt="" className="brightness-50 w-full h-auto " />
         <div className="absolute top-1/2 left-4  sm:left-24   text-white -translate-y-1/2">
           <p className="sm:border-l-10 border-l-8 border-l-[#4FE78B] font-bold md:text-[64px] sm:text-[40px] text-[25px] px-2 sm:px-6 max-w-[822px] sm:leading-[70px] ">
             About RDR General Construction Corp.
@@ -38,25 +38,25 @@ function page() {
               <h2 className="font-semibold text-[24px] ">Why Choose RDR?</h2>
               <div className="flex flex-col gap-3 py-3 ">
                 <div className="flex items-center gap-2 text-[#120F0F] ">
-                  <img src="/tick.png" alt="" className="w-[29px]  " />
+                  <img src="/tick.webp" alt="" className="w-[29px]  " />
                   <p className="max-w-[469px]">
                     Years of hands-on experience in complex projects.
                   </p>
                 </div>
                 <div className="flex items-center gap-2 text-[#120F0F] ">
-                  <img src="/tick.png" alt="" className="w-[29px]  " />
+                  <img src="/tick.webp" alt="" className="w-[29px]  " />
                   <p className="max-w-[469px]">
                     Compliance with regulations at every step.
                   </p>
                 </div>
                 <div className="flex items-center gap-2 text-[#120F0F] ">
-                  <img src="/tick.png" alt="" className="w-[29px]  " />
+                  <img src="/tick.webp" alt="" className="w-[29px]  " />
                   <p className="max-w-[469px]">
                     On-time and on-budget delivery.
                   </p>
                 </div>
                 <div className="flex items-center gap-2 text-[#120F0F] ">
-                  <img src="/tick.png" alt="" className="w-[29px]  " />
+                  <img src="/tick.webp" alt="" className="w-[29px]  " />
                   <p className="max-w-[469px]">
                     Custom solutions for residential, commercial, and government
                     contracts.
@@ -68,13 +68,13 @@ function page() {
 
           <div className="relative aspect-[4/5]">
             <img
-              src="/below.png"
+              src="/below.webp"
               alt=""
               className="absolute top-0 left-0 w-[80%] h-[85%] object-cover rounded-lg shadow-lg"
             />
 
             <img
-              src="/above.png"
+              src="/above.webp"
               alt=""
               className="absolute bottom-0 right-0 w-[75%] h-[85%] object-cover rounded-lg shadow-2xl border-4 border-white"
             />
@@ -84,7 +84,7 @@ function page() {
 
       <div className="relative min-h-[400px] md:min-h-[600px] flex items-center justify-center">
         <img
-          src="/frame.png"
+          src="/frame.webp"
           alt=""
           className="absolute top-0 left-0 w-full h-full object-cover brightness-50"
         />
@@ -107,7 +107,7 @@ function page() {
       <div className="relative w-full min-h-[600px] lg:overflow-hidden py-12 lg:py-0">
         {/* --- Background Image (No changes needed) --- */}
         <img
-          src="/rectangle 33.png"
+          src="/rectangle 33.webp"
           alt="Background of a bridge"
           className="absolute inset-0 w-full h-full object-cover -z-10"
         />
@@ -132,7 +132,7 @@ function page() {
           DESKTOP (lg): Your original fixed width.
         */}
               <img
-                src="/my dad.png"
+                src="/my dad.webp"
                 alt="Engr. (Dr.) R.U. ODOH"
                 className="w-[280px] lg:w-[350px] h-auto rounded-lg shadow-xl"
               />

@@ -14,16 +14,16 @@ function Footer() {
           </p>
           <div className="flex gap-2 items-center">
             <div className="bg-[#DF383D] sm:w-[48px] sm:h-[48px] w-[38px] h-[38px] rounded-full flex justify-center items-center ">
-              <img src="/facebook.png" alt="" className="w-[19px]" />
+              <img src="/facebook.webp" alt="" className="w-[19px]" />
             </div>
             <div className="bg-[#DF383D] sm:w-[48px] sm:h-[48px] w-[38px] h-[38px] rounded-full flex justify-center items-center ">
-              <img src="/x.png" alt="" className="w-[17px]" />
+              <img src="/x.webp" alt="" className="w-[17px]" />
             </div>
             <div className="bg-[#DF383D] sm:w-[48px] sm:h-[48px] w-[38px] h-[38px] rounded-full flex justify-center items-center ">
-              <img src="/linkedin.png" alt="" className="w-[17px]" />
+              <img src="/linkedin.webp" alt="" className="w-[17px]" />
             </div>
             <div className="bg-[#DF383D] sm:w-[48px] sm:h-[48px] w-[38px] h-[38px] rounded-full flex justify-center items-center ">
-              <img src="/instagram.png" alt="" className="w-[17px]" />
+              <img src="/instagram.webp" alt="" className="w-[17px]" />
             </div>
           </div>
         </div>

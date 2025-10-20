@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import {Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 
 // A reusable component for the triangle to avoid repeating code.
 const ActiveIndicator = () => (
@@ -39,7 +39,7 @@ function Navbar() {
     <div className="w-full relative z-100 ">
       {/*Navbar on smaller screen */}
 
-      <div className="flex justify-between items-center gap-3 p-4 md:hidden ">
+      <div className="flex justify-between items-center gap-3 p-4 md:hidden relative ">
         <Menu />
         <div className="flex items-center gap-3">
           <div>
@@ -52,6 +52,10 @@ function Navbar() {
           <button className="bg-[#B12D31] px-4 py-2 rounded-lg hover:scale-105 hover:bg-[#b12d31f3] duration-300 transition-all text-white cursor-pointer ">
             Contact Us
           </button>
+        </div>
+
+        <div className="bg-[#B12D31] w-full fixed z-200 h-[100dvh] top-18 left-0 text-white ">
+          <p>hi</p>
         </div>
       </div>
 
