@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 function page() {
@@ -225,9 +226,11 @@ function page() {
 
             <div className="flex items-center ">
               <div className="relative cursor-pointer hover:scale-105 hover:bg-[#b12d31ea] duration-300 transition-all ">
-                <button className="bg-[#0883BB] py-3 px-3 text-white relative cursor-pointer duration-300 transition-all ">
-                  Learn More About us{" "}
-                </button>
+                <Link href="/about">
+                  <button className="bg-[#0883BB] py-3 px-3 text-white relative cursor-pointer duration-300 transition-all ">
+                    Learn More About us{" "}
+                  </button>
+                </Link>
                 <span className="bg-black absolute -right-6 top-0 h-full flex flex-col justify-center items-center px-2 skew-x-8 ">
                   <img src="/icon.webp" alt="" className="w-[12px]" />
                 </span>
