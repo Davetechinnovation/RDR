@@ -16,10 +16,34 @@ function Navbar() {
 
   // State to control mobile menu visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [animationClass, setAnimationClass] = useState("");
 
   // Toggle mobile menu
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    if (isMobileMenuOpen) {
+      // Start closing animation
+      setIsAnimating(true);
+      setAnimationClass("navbar-slide-out");
+      
+      // After animation completes, hide the menu
+      setTimeout(() => {
+        setIsMobileMenuOpen(false);
+        setIsAnimating(false);
+        setAnimationClass("");
+      }, 300); // Match the animation duration
+    } else {
+      // Open menu and start opening animation
+      setIsMobileMenuOpen(true);
+      setIsAnimating(true);
+      setAnimationClass("navbar-slide-in");
+      
+      // Clear animation class after animation completes
+      setTimeout(() => {
+        setIsAnimating(false);
+        setAnimationClass("");
+      }, 300); // Match the animation duration
+    }
   };
 
   // Normalize the pathname
@@ -65,8 +89,8 @@ function Navbar() {
         </div>
 
         {/* Mobile Menu Overlay */}
-        {isMobileMenuOpen && (
-          <div className="bg-[#B12D31] w-full fixed z-50 h-screen overflow-y-auto py-5 top-0 left-0 text-white">
+        {(isMobileMenuOpen || isAnimating) && (
+          <div className={`bg-[#B12D31] w-full fixed z-50 h-screen overflow-y-auto py-5 top-0 left-0 text-white ${animationClass}`}>
             <div className="flex justify-between items-center p-4">
               <img
                 src="/rdr logo.webp"

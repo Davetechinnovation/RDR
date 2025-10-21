@@ -357,6 +357,35 @@ function page() {
           </div>
         </div>
       </div>
+
+      <div className="py-10" >
+        <div className="flex flex-wrap gap-20 justify-center items-center">
+          <div className="flex flex-col gap-5 justify-between">
+            <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] leading-[50px] ">
+              Asbestos Abatement & Removal{" "}
+              <span className="inline-block w-[50px] h-[11px] bg-[#B12D31] my-3 "></span>{" "}
+            </h2>
+
+            <p>
+              <span className="font-semibold">
+                We specialize in the safe management of asbestos through:
+              </span>
+              <ul className="list-disc pl-7 text-[14px] flex flex-col gap-2 py-2 ">
+                <li>Detailed inspections and testing </li>
+                <li> Certified asbestos removal and abatement</li>
+                <li> Professional project monitoring </li>
+                <li>Reliable air quality monitoring</li>
+                <li>
+                  Our team ensures your property is safe, compliant, and
+                  asbestos-free.
+                </li>
+              </ul>
+            </p>
+          </div>
+          <div className=" max-w-[532px] w-full "><img src="/man1.png" alt=""  /></div>
+          
+        </div>
+      </div>
     </div>
   );
 }
