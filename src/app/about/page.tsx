@@ -4,7 +4,7 @@ function page() {
   return (
     <div>
       <div className="relative">
-        <img src="/bg.webp" alt="" className="brightness-50 w-full h-[400px] sm:h-[500px] md:h-[600px] object-cover" />
+        <img src="/bg.webp" alt="" className="brightness-50 w-full h-[200px] sm:h-[400px] sm:h-[500px] md:h-[600px] object-cover" />
         <div className="absolute top-1/2 left-4  sm:left-24   text-white -translate-y-1/2">
           <p className="sm:border-l-10 border-l-8 border-l-[#4FE78B] font-bold md:text-[64px] sm:text-[40px] text-[25px] px-2 sm:px-6 max-w-[822px] sm:leading-[70px] ">
             About RDR General Construction Corp.
@@ -13,7 +13,7 @@ function page() {
       </div>
 
       <div className="sm:py-20 py-10 sm:px-10 px-5 ">
-        <div className="grid sm:grid-cols-2 grid-col2-1 ">
+        <div className="grid gap-5 md:grid-cols-2 grid-col2-1 ">
           <div className="flex flex-col justify-between">
             <div>
               <h2 className="font-bold text-[30px] sm:text-[45px]">
