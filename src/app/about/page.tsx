@@ -4,7 +4,11 @@ function page() {
   return (
     <div>
       <div className="relative">
-        <img src="/bg.webp" alt="" className="brightness-50 w-full h-[200px] sm:h-[400px] sm:h-[500px] md:h-[600px] object-cover" />
+        <img
+          src="/bg.webp"
+          alt=""
+          className="brightness-50 w-full h-[200px] sm:h-[400px] md:h-[600px] object-cover"
+        />
         <div className="absolute top-1/2 left-4  sm:left-24   text-white -translate-y-1/2">
           <p className="sm:border-l-10 border-l-8 border-l-[#4FE78B] font-bold md:text-[64px] sm:text-[40px] text-[25px] px-2 sm:px-6 max-w-[822px] sm:leading-[70px] ">
             About RDR General Construction Corp.
@@ -112,25 +116,13 @@ function page() {
           className="absolute inset-0 w-full h-full object-cover -z-10"
         />
 
-        {/* 
-    MOBILE (default): A standard block, centered with margin auto.
-    DESKTOP (lg): Becomes the absolutely positioned centered box.
-  */}
         <div
           className="relative w-full max-w-7xl mx-auto px-4 
                lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2"
         >
-          {/* 
-      MOBILE (default): Stacks vertically.
-      DESKTOP (lg): Side-by-side with a large gap.
-    */}
           <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center gap-8 lg:gap-16">
             {/* --- LEFT COLUMN (Image and Caption) --- */}
             <div className="flex flex-col items-center gap-3">
-              {/* 
-          MOBILE (default): Smaller image width.
-          DESKTOP (lg): Your original fixed width.
-        */}
               <img
                 src="/my dad.webp"
                 alt="Engr. (Dr.) R.U. ODOH"
@@ -155,9 +147,7 @@ function page() {
                   compliance, and client satisfaction.
                 </span>
               </p>
-              <p
-                className="bg-[#3CD679] p-6 flex flex-col gap-4 rounded-md shadow-lg absolute top-[200px] right-0 w-4/5 lg:p-7 lg:gap-5 lg:w-[382px] lg:top-16 lg:left-[350px]"
-              >
+              <p className="bg-[#3CD679] p-6 flex flex-col gap-4 rounded-md shadow-lg absolute top-[200px] right-0 w-4/5 lg:p-7 lg:gap-5 lg:w-[382px] lg:top-16 lg:left-[350px]">
                 <span className="font-bold text-xl lg:text-[22px]">
                   Our Vision
                 </span>

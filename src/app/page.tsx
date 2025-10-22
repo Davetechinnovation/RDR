@@ -9,7 +9,7 @@ function page() {
         <img
           src="/rdr.webp"
           alt=""
-          className="brightness-40 md:h-auto h-[375px] object-cover "
+          className="brightness-40 w-full h-[375px]  sm:h-[500px] md:h-[600px]  object-cover "
         />
 
         <div className="absolute top-1/2 -translate-y-1/2 lg:left-16 sm:left-8 px-4 text-white ">
