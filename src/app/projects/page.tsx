@@ -15,6 +15,38 @@ function page() {
           </p>
         </div>
       </div>
+
+      <div className="py-15 flex flex-col justify-center items-center ">
+        <div className="px-2 flex flex-col justify-center items-center ">
+          <h2 className="font-bold sm:text-[36px] text-[20px]">
+            Abestos Abatement
+          </h2>
+          <p className="text-center">
+            Our asbestos projects focus on creating safe, healthy environments
+            through:
+          </p>
+          <ul className="list-disc pl-2">
+            <li>Asbestos Tests & Inspections</li>
+            <li>Certified Asbestos Removal</li>
+            <li>Project Monitoring</li>
+            <li>Air Quality Monitoring</li>
+          </ul>
+        </div>
+
+        <div>
+          <div className="flex overflow-x-auto gap-5 py-5 scrollbar-none snap-x snap-mandatory w-full max-w-full scroll-smooth px-1 ">
+            <img src="pr1.png" alt="" className="min-w-[250px]" />
+            <img src="pr2.png" alt="" className="min-w-[250px]" />
+            <img src="pr3.png" alt="" className="min-w-[250px]" />
+          </div>
+
+          <div className="flex overflow-x-auto gap-5 py-5 scrollbar-none snap-x snap-mandatory w-full max-w-full scroll-smooth px-1 ">
+            <img src="pr4.png" alt="" className="min-w-[250px]" />
+            <img src="pr5.png" alt="" className="min-w-[250px]" />
+            <img src="pr6.png" alt="" className="min-w-[250px]" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

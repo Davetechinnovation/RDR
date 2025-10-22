@@ -147,6 +147,13 @@ function Navbar() {
                 Services
               </Link>
               <Link
+                href="/projects"
+                onClick={toggleMobileMenu}
+                className="text-lg hover:text-gray-300 border-b-2 border-b-[#E0E0E033] pb-3 "
+              >
+               Projects
+              </Link>
+              <Link
                 href="/contact"
                 onClick={toggleMobileMenu}
                 className="text-lg hover:text-gray-300 border-b-2 border-b-[#E0E0E033] pb-3 "
