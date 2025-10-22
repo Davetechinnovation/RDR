@@ -358,7 +358,7 @@ function page() {
         </div>
       </div>
 
-      <div className="py-10 md:px-20 sm:px-10 px-5 flex flex-col gap-10  " >
+      <div className="py-10 md:px-20 sm:px-10 px-5 flex flex-col gap-10  ">
         <div className="flex flex-wrap gap-5 justify-between ">
           <div className="flex flex-col justify-between">
             <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] leading-[50px] ">
@@ -375,120 +375,100 @@ function page() {
                 <li> Certified asbestos removal and abatement</li>
                 <li> Professional project monitoring </li>
                 <li>Reliable air quality monitoring</li>
-                <li>
+                <p className="italic">
                   Our team ensures your property is safe, compliant, and
                   asbestos-free.
-                </li>
+                </p>
               </ul>
             </p>
           </div>
-          <div className=" max-w-[532px] w-full "><img src="/man1.png" alt=""  /></div>
+          <div className=" max-w-[532px] w-full ">
+            <img src="/man1.png" alt="" />
+          </div>
         </div>
 
-        <div className="flex flex-wrap flex-row-reverse gap-5 justify-between ">
-          <div className="flex flex-col justify-between">
+        <div className="flex flex-wrap flex-row-reverse gap-5 justify-between items-center ">
+          <div className="flex flex-col ">
             <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] leading-[50px] ">
-              Asbestos Abatement & Removal{" "}
+              Lead Paint Abatement{" "}
               <span className="inline-block w-[50px] h-[11px] bg-[#B12D31] my-5"></span>{" "}
             </h2>
 
             <p>
               <span className="font-semibold inline-block py-2 ">
-                We specialize in the safe management of asbestos through:
+                Protecting your property from lead hazards with:
               </span>
               <ul className="list-disc pl-7 text-[14px] flex flex-col gap-3">
-                <li>Detailed inspections and testing </li>
-                <li> Certified asbestos removal and abatement</li>
-                <li> Professional project monitoring </li>
-                <li>Reliable air quality monitoring</li>
-                <li>
-                  Our team ensures your property is safe, compliant, and
-                  asbestos-free.
-                </li>
+                <li>Accurate lead testing and inspections </li>
+                <li>Safe and effective lead paint removal</li>
+                <li>HPD lead violation corrections </li>
+                <li>NYCDOH violation clearance</li>
+                <p className="italic">
+                  We create healthier spaces while helping clients meet all
+                  regulatory requirements.
+                </p>
               </ul>
             </p>
           </div>
-          <div className=" max-w-[532px] w-full "><img src="/man1.png" alt=""  /></div>
+          <div className=" max-w-[532px] w-full ">
+            <img src="/image2.jpg" alt="" />
+          </div>
         </div>
 
-        <div className="flex flex-wrap gap-5 justify-between ">
-          <div className="flex flex-col justify-between">
+        <div className="flex flex-wrap gap-5 justify-between items-center  ">
+          <div className="flex flex-col  ">
             <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] leading-[50px] ">
-              Asbestos Abatement & Removal{" "}
+              Mold Remediation{" "}
               <span className="inline-block w-[50px] h-[11px] bg-[#B12D31] my-5"></span>{" "}
             </h2>
 
             <p>
               <span className="font-semibold inline-block py-2 ">
-                We specialize in the safe management of asbestos through:
+                Restoring clean, healthy environments through:
               </span>
               <ul className="list-disc pl-7 text-[14px] flex flex-col gap-3">
-                <li>Detailed inspections and testing </li>
-                <li> Certified asbestos removal and abatement</li>
-                <li> Professional project monitoring </li>
-                <li>Reliable air quality monitoring</li>
-                <li>
-                  Our team ensures your property is safe, compliant, and
-                  asbestos-free.
-                </li>
+                <li>Comprehensive mold inspections and testing</li>
+                <li> Thorough mold removal and remediation</li>
+                <li> Violation resolution for compliance </li>
+                <p className="italic">
+                  We eliminate mold at the source and prevent it from coming
+                  back.
+                </p>
               </ul>
             </p>
           </div>
-          <div className=" max-w-[532px] w-full "><img src="/man1.png" alt=""  /></div>
+          <div className=" max-w-[532px] w-full ">
+            <img src="/image3.jpg" alt="" />
+          </div>
         </div>
 
-        <div className="flex flex-wrap gap-5 flex-row-reverse justify-between  ">
-          <div className="flex flex-col justify-between">
+        <div className="flex flex-wrap gap-5 flex-row-reverse justify-between items-center ">
+          <div className="flex flex-col">
             <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] leading-[50px] ">
-              Asbestos Abatement & Removal{" "}
+              Demolition Services
               <span className="inline-block w-[50px] h-[11px] bg-[#B12D31] my-5"></span>{" "}
             </h2>
 
-            <p>
+            <p className="max-w-[484px]">
               <span className="font-semibold inline-block py-2 ">
-                We specialize in the safe management of asbestos through:
+                Offering safe and efficient demolition solutions including:
               </span>
               <ul className="list-disc pl-7 text-[14px] flex flex-col gap-3">
-                <li>Detailed inspections and testing </li>
-                <li> Certified asbestos removal and abatement</li>
-                <li> Professional project monitoring </li>
-                <li>Reliable air quality monitoring</li>
-                <li>
-                  Our team ensures your property is safe, compliant, and
-                  asbestos-free.
-                </li>
+                <li>Selective demolition</li>
+                <li>Interior demolition</li>
+                <li>Exterior demolition</li>
+                <li>Complete building takedowns</li>
+                <p className="italic">
+                  From partial removals to full structural demolition, we get it
+                  done safely and efficiently.
+                </p>
               </ul>
             </p>
           </div>
-          <div className=" max-w-[532px] w-full "><img src="/man1.png" alt=""  /></div>
-        </div>
-
-        <div className="flex flex-wrap gap-5 justify-between  ">
-          <div className="flex flex-col justify-between">
-            <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] leading-[50px] ">
-              Asbestos Abatement & Removal{" "}
-              <span className="inline-block w-[50px] h-[11px] bg-[#B12D31] my-5"></span>{" "}
-            </h2>
-
-            <p>
-              <span className="font-semibold inline-block py-2 ">
-                We specialize in the safe management of asbestos through:
-              </span>
-              <ul className="list-disc pl-7 text-[14px] flex flex-col gap-3">
-                <li>Detailed inspections and testing </li>
-                <li> Certified asbestos removal and abatement</li>
-                <li> Professional project monitoring </li>
-                <li>Reliable air quality monitoring</li>
-                <li>
-                  Our team ensures your property is safe, compliant, and
-                  asbestos-free.
-                </li>
-              </ul>
-            </p>
+          <div className=" max-w-[532px] w-full ">
+            <img src="/image4.jpg" alt="" />
           </div>
-          <div className=" max-w-[532px] w-full "><img src="/man1.png" alt=""  /></div>
         </div>
-
       </div>
     </div>
   );
