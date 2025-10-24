@@ -49,37 +49,37 @@ function page() {
           <div className="relative px-1">
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex py-5">
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:mr-5 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:mr-5 mr-3">
                   <img src="pr1.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:mr-5 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:mr-5 mr-3">
                   <img src="pr2.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:mr-5 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:mr-5 mr-3">
                   <img src="pr3.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:mr-5 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:mr-5 mr-3">
                   <img src="pr1.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:mr-5 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:mr-5 mr-3">
                   <img src="pr2.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:mr-5 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:mr-5 mr-3">
                   <img src="pr3.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:mr-5 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:mr-5 mr-3">
                   <img src="pr1.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:mr-5 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:mr-5 mr-3">
                   <img src="pr2.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:mr-5 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:mr-5 mr-3">
                   <img src="pr3.png" alt="" className="w-full" />
                 </div>
               </div>
             </div>
 
-            <div className="z-50 absolute top-1/2 -translate-y-1/2 left-5 cursor-pointer">
+            <div className="z-50 absolute top-1/2 -translate-y-1/2 sm:left-5 left-10 cursor-pointer">
               <svg
                 width="45"
                 height="45"
@@ -105,37 +105,37 @@ function page() {
           <div className="relative px-1">
             <div className="overflow-hidden" ref={emblaRef2}>
               <div className="flex ">
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:ml-5 ml-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:ml-5 ml-3">
                   <img src="pr6.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:ml-5 ml-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:ml-5 ml-3">
                   <img src="pr5.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:ml-5 ml-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:ml-5 ml-3">
                   <img src="pr4.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:ml-5 ml-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:ml-5 ml-3">
                   <img src="pr6.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:ml-5 ml-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:ml-5 ml-3">
                   <img src="pr5.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:ml-5 ml-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:ml-5 ml-3">
                   <img src="pr4.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:ml-5 ml-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:ml-5 ml-3">
                   <img src="pr6.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:ml-5 ml-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:ml-5 ml-3">
                   <img src="pr5.png" alt="" className="w-full" />
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[250px] sm:ml-5 ml-3">
+                <div className="flex-[0_0_calc((100%-40px)/3)] min-w-[300px] sm:ml-5 ml-3">
                   <img src="pr4.png" alt="" className="w-full" />
                 </div>
               </div>
             </div>
 
-            <div className="absolute top-1/2 -translate-y-1/2 right-5 cursor-pointer z-50">
+            <div className="absolute top-1/2 -translate-y-1/2 sm:right-5 right-10 cursor-pointer z-50">
               <svg
                 width="45"
                 height="45"

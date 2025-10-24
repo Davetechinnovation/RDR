@@ -365,7 +365,7 @@ function page() {
       <div className="py-10 md:px-20 sm:px-10 px-5 flex flex-col gap-10  ">
         <div className="flex flex-wrap gap-5 justify-between ">
           <div className="flex flex-col justify-between">
-            <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] leading-[50px] ">
+            <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] sm:leading-[50px] ">
               Asbestos Abatement & Removal{" "}
               <span className="inline-block w-[50px] h-[11px] bg-[#B12D31] my-5"></span>{" "}
             </h2>
@@ -393,7 +393,7 @@ function page() {
 
         <div className="flex flex-wrap flex-row-reverse gap-5 justify-between items-center ">
           <div className="flex flex-col ">
-            <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] leading-[50px] ">
+            <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] sm:leading-[50px] ">
               Lead Paint Abatement{" "}
               <span className="inline-block w-[50px] h-[11px] bg-[#B12D31] my-5"></span>{" "}
             </h2>
@@ -421,7 +421,7 @@ function page() {
 
         <div className="flex flex-wrap gap-5 justify-between items-center  ">
           <div className="flex flex-col  ">
-            <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] leading-[50px] ">
+            <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] sm:leading-[50px] ">
               Mold Remediation{" "}
               <span className="inline-block w-[50px] h-[11px] bg-[#B12D31] my-5"></span>{" "}
             </h2>
@@ -448,7 +448,7 @@ function page() {
 
         <div className="flex flex-wrap gap-5 flex-row-reverse justify-between items-center ">
           <div className="flex flex-col">
-            <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] leading-[50px] ">
+            <h2 className="text-[25px] sm:text-[30px] md:text-[40px] font-bold flex flex-col max-w-[419px] sm:leading-[50px] ">
               Demolition Services
               <span className="inline-block w-[50px] h-[11px] bg-[#B12D31] my-5"></span>{" "}
             </h2>
