@@ -172,8 +172,6 @@ function page() {
           </div>
         </div>
 
-        
-
         <div className="px-2 flex flex-col justify-center items-center py-10 max-w-[644px] ">
           <h2 className="font-bold sm:text-[36px] text-[20px]">
             Lead Abatement
@@ -191,39 +189,69 @@ function page() {
           </ul>
         </div>
 
-         <div className="w-full">
+        <div className="w-full">
           <div className="relative px-1">
             <div className="overflow-hidden" ref={emblaRef3}>
               <div className="flex py-5">
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i1.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i1.webp
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i2.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i2.webp
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i3.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i3.webp
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i4.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i4.webp
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250pxx] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250pxx] sm:mr-4 mr-3 relative">
                   <img src="i5.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i5.webp
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i1.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i1.webp (2)
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i2.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i2.webp (2)
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i3.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i3.webp (2)
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i4.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i4.webp (2)
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i5.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i5.webp (2)
+                  </div>
                 </div>
               </div>
             </div>
@@ -253,36 +281,66 @@ function page() {
 
           <div className="relative px-1">
             <div className="overflow-hidden" ref={emblaRef4}>
-               <div className="flex">
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+              <div className="flex">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i6.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i6.webp
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i7.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i7.webp
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i8.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i8.webp
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i9.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i9.webp
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250pxx] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250pxx] sm:mr-4 mr-3 relative">
                   <img src="i10.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i10.webp
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i6.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i6.webp (2)
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i7.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i7.webp (2)
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i8.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i8.webp (2)
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i9.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i9.webp (2)
+                  </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i10.webp" alt="" className="w-full" />
+                  <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
+                    i10.webp (2)
+                  </div>
                 </div>
               </div>
             </div>
