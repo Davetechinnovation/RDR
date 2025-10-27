@@ -1,7 +1,18 @@
-import { Plus } from "lucide-react";
-import React from "react";
+"use client";
+
+import { Plus, Minus } from "lucide-react";
+import React, { useState } from "react";
 
 function page() {
+  const [expandedItems, setExpandedItems] = useState<number[]>([]);
+
+  const toggleItem = (index: number) => {
+    setExpandedItems(prev => 
+      prev.includes(index) 
+        ? prev.filter(item => item !== index)
+        : [...prev, index]
+    );
+  };
   return (
     <div>
       <div className="relative">
@@ -23,7 +34,7 @@ function page() {
         </h1>
         <p>We Can’t Wait to Make Your Ideas a Reality</p>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-5 ">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-2 ">
           <div className="sm:my-8 my-5 ">
             <div className="relative ">
               <h2 className="text-[25px] sm:text-[35px] md:text-[45px] font-bold py-3 ">
@@ -73,11 +84,20 @@ function page() {
             <div className="py-3 border-b ">
               <h2 className="flex justify-between gap-5 font-bold">
                 Do you provide free estimates?{" "}
-                <span className="bg-[#B12D31] text-white w-[25px] h-[25px] rounded-full flex flex-col justify-center items-center cursor-pointer ">
-                  <Plus className="w-5 h-5" />{" "}
+                <span
+                  className="bg-[#B12D31] text-white w-[25px] h-[25px] rounded-full flex flex-col justify-center items-center cursor-pointer"
+                  onClick={() => toggleItem(0)}
+                >
+                  {expandedItems.includes(0) ? (
+                    <Minus className="w-5 h-5" />
+                  ) : (
+                    <Plus className="w-5 h-5" />
+                  )}
                 </span>{" "}
               </h2>
-              <p className="text-[14px] text-[#120F0F] py-3 ">
+              <p className={`text-[14px] text-[#120F0F] py-3 transition-all duration-300 ease-in-out ${
+                expandedItems.includes(0) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+              }`}>
                 Yes, we offer free consultations and estimates to help clients
                 plan their projects with confidence.
               </p>
@@ -86,11 +106,20 @@ function page() {
             <div className="py-3 border-b ">
               <h2 className="flex justify-between gap-5 font-bold">
                 Are your services certified and compliant with regulations?
-                <span className="bg-[#B12D31] text-white w-[25px] h-[25px] rounded-full flex flex-col justify-center items-center cursor-pointer ">
-                  <Plus className="w-5 h-5" />{" "}
+                <span
+                  className="bg-[#B12D31] text-white w-[25px] h-[25px] rounded-full flex flex-col justify-center items-center cursor-pointer"
+                  onClick={() => toggleItem(1)}
+                >
+                  {expandedItems.includes(1) ? (
+                    <Minus className="w-5 h-5" />
+                  ) : (
+                    <Plus className="w-5 h-5" />
+                  )}
                 </span>{" "}
               </h2>
-              <p className="text-[14px] text-[#120F0F] py-3 ">
+              <p className={`text-[14px] text-[#120F0F] py-3 transition-all duration-300 ease-in-out ${
+                expandedItems.includes(1) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+              }`}>
                 Absolutely. All our work is licensed, insured, and fully
                 compliant with New York building regulations.
               </p>
@@ -99,11 +128,20 @@ function page() {
             <div className="py-3 border-b ">
               <h2 className="flex justify-between gap-5 font-bold">
                 What types of projects do you handle?
-                <span className="bg-[#B12D31] text-white w-[25px] h-[25px] rounded-full flex flex-col justify-center items-center cursor-pointer ">
-                  <Plus className="w-5 h-5" />{" "}
+                <span
+                  className="bg-[#B12D31] text-white w-[25px] h-[25px] rounded-full flex flex-col justify-center items-center cursor-pointer"
+                  onClick={() => toggleItem(2)}
+                >
+                  {expandedItems.includes(2) ? (
+                    <Minus className="w-5 h-5" />
+                  ) : (
+                    <Plus className="w-5 h-5" />
+                  )}
                 </span>{" "}
               </h2>
-              <p className="text-[14px] text-[#120F0F] py-3 ">
+              <p className={`text-[14px] text-[#120F0F] py-3 transition-all duration-300 ease-in-out ${
+                expandedItems.includes(2) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+              }`}>
                 We handle residential, commercial, and industrial construction
                 projects of all sizes.
               </p>
@@ -112,11 +150,20 @@ function page() {
             <div className="py-3 border-b ">
               <h2 className="flex justify-between gap-5 font-bold">
                 How long does a typical project take?
-                <span className="bg-[#B12D31] text-white w-[25px] h-[25px] rounded-full flex flex-col justify-center items-center cursor-pointer ">
-                  <Plus className="w-5 h-5" />{" "}
+                <span
+                  className="bg-[#B12D31] text-white w-[25px] h-[25px] rounded-full flex flex-col justify-center items-center cursor-pointer"
+                  onClick={() => toggleItem(3)}
+                >
+                  {expandedItems.includes(3) ? (
+                    <Minus className="w-5 h-5" />
+                  ) : (
+                    <Plus className="w-5 h-5" />
+                  )}
                 </span>{" "}
               </h2>
-              <p className="text-[14px] text-[#120F0F] py-3 ">
+              <p className={`text-[14px] text-[#120F0F] py-3 transition-all duration-300 ease-in-out ${
+                expandedItems.includes(3) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+              }`}>
                 Timelines vary by project scope, but we always provide a clear
                 schedule before starting and keep you updated throughout.
               </p>
@@ -125,11 +172,20 @@ function page() {
             <div className="py-3 border-b ">
               <h2 className="flex justify-between gap-5 font-bold">
                 Do you handle violation removals?
-                <span className="bg-[#B12D31] text-white w-[25px] h-[25px] rounded-full flex flex-col justify-center items-center cursor-pointer ">
-                  <Plus className="w-5 h-5" />{" "}
+                <span
+                  className="bg-[#B12D31] text-white w-[25px] h-[25px] rounded-full flex flex-col justify-center items-center cursor-pointer"
+                  onClick={() => toggleItem(4)}
+                >
+                  {expandedItems.includes(4) ? (
+                    <Minus className="w-5 h-5" />
+                  ) : (
+                    <Plus className="w-5 h-5" />
+                  )}
                 </span>{" "}
               </h2>
-              <p className="text-[14px] text-[#120F0F] py-3 ">
+              <p className={`text-[14px] text-[#120F0F] py-3 transition-all duration-300 ease-in-out ${
+                expandedItems.includes(4) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+              }`}>
                 Yes, we assist with resolving building violations and bringing
                 properties up to code.
               </p>
