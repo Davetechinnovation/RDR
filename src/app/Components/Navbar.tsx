@@ -25,7 +25,7 @@ function Navbar() {
       // Start closing animation
       setIsAnimating(true);
       setAnimationClass("navbar-slide-out");
-      
+
       // After animation completes, hide the menu
       setTimeout(() => {
         setIsMobileMenuOpen(false);
@@ -37,7 +37,7 @@ function Navbar() {
       setIsMobileMenuOpen(true);
       setIsAnimating(true);
       setAnimationClass("navbar-slide-in");
-      
+
       // Clear animation class after animation completes
       setTimeout(() => {
         setIsAnimating(false);
@@ -90,7 +90,9 @@ function Navbar() {
 
         {/* Mobile Menu Overlay */}
         {(isMobileMenuOpen || isAnimating) && (
-          <div className={`bg-[#B12D31] w-full fixed z-50 h-screen overflow-y-auto py-5 top-0 left-0 text-white ${animationClass}`}>
+          <div
+            className={`bg-[#B12D31] w-full fixed z-50 h-screen overflow-y-auto py-5 top-0 left-0 text-white ${animationClass}`}
+          >
             <div className="flex justify-between items-center p-4">
               <img
                 src="/rdr logo.webp"
@@ -151,7 +153,7 @@ function Navbar() {
                 onClick={toggleMobileMenu}
                 className="text-lg hover:text-gray-300 border-b-2 border-b-[#E0E0E033] pb-3 "
               >
-               Projects
+                Projects
               </Link>
               <Link
                 href="/contact"
@@ -164,14 +166,93 @@ function Navbar() {
 
             <div className="flex flex-col gap-5 px-4 ">
               <div className="flex items-center gap-2">
-                <img src="/UserRectangle-white.png " alt="" />
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_104_626)">
+                    <path
+                      d="M10.6105 13.2632C12.4418 13.2632 13.9263 11.7786 13.9263 9.94737C13.9263 8.11611 12.4418 6.63158 10.6105 6.63158C8.77927 6.63158 7.29474 8.11611 7.29474 9.94737C7.29474 11.7786 8.77927 13.2632 10.6105 13.2632Z"
+                      stroke="white"
+                      stroke-width="1.32632"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M17.9053 3.97895H3.31579C2.94954 3.97895 2.65263 4.27586 2.65263 4.64211V16.5789C2.65263 16.9452 2.94954 17.2421 3.31579 17.2421H17.9053C18.2715 17.2421 18.5684 16.9452 18.5684 16.5789V4.64211C18.5684 4.27586 18.2715 3.97895 17.9053 3.97895Z"
+                      stroke="white"
+                      stroke-width="1.32632"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.98198 17.2421C5.39278 16.0774 6.15476 15.0689 7.16286 14.3555C8.17096 13.6421 9.37554 13.259 10.6105 13.259C11.8455 13.259 13.0501 13.6421 14.0582 14.3555C15.0663 15.0689 15.8283 16.0774 16.2391 17.2421"
+                      stroke="white"
+                      stroke-width="1.32632"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_104_626">
+                      <rect width="21.2211" height="21.2211" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
                 <p className="font-medium flex flex-col font-[Poppins]  ">
                   <span className="text-white text-[15px] ">Call us</span>
                   <span className="text-[18px]  "> 718-277-0803</span>
                 </p>
               </div>
               <div className="flex items-center gap-2">
-                <img src="/Envelope-white.png " alt="" />
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_104_615)">
+                    <path
+                      d="M18.5684 4.64211L10.6105 11.9368L2.65263 4.64211"
+                      stroke="white"
+                      stroke-width="1.32632"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.65263 4.64211H18.5684V15.9158C18.5684 16.0917 18.4986 16.2603 18.3742 16.3847C18.2498 16.5091 18.0811 16.5789 17.9053 16.5789H3.31579C3.13991 16.5789 2.97123 16.5091 2.84687 16.3847C2.7225 16.2603 2.65263 16.0917 2.65263 15.9158V4.64211Z"
+                      stroke="white"
+                      stroke-width="1.32632"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.16404 10.6105L2.85741 16.3916"
+                      stroke="white"
+                      stroke-width="1.32632"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18.3637 16.3916L12.0571 10.6105"
+                      stroke="white"
+                      stroke-width="1.32632"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_104_615">
+                      <rect width="21.2211" height="21.2211" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
                 <p className="font-medium flex flex-col font-[Poppins]  ">
                   <span className="text-white text-[15px] ">Mail us</span>
                   <span className="text-[18px]  ">
@@ -181,7 +262,39 @@ function Navbar() {
                 </p>
               </div>
               <div className="flex items-center gap-2">
-                <img src="/MapPinArea-white.png" alt="" />
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_104_605)">
+                    <path
+                      d="M10.6105 7.9579C11.343 7.9579 11.9368 7.36409 11.9368 6.63158C11.9368 5.89908 11.343 5.30527 10.6105 5.30527C9.87802 5.30527 9.28421 5.89908 9.28421 6.63158C9.28421 7.36409 9.87802 7.9579 10.6105 7.9579Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M15.2526 6.63159C15.2526 11.2737 10.6105 13.9263 10.6105 13.9263C10.6105 13.9263 5.96841 11.2737 5.96841 6.63159C5.96841 5.40043 6.45749 4.21969 7.32806 3.34913C8.19862 2.47856 9.37936 1.98949 10.6105 1.98949C11.8417 1.98949 13.0224 2.47856 13.893 3.34913C14.7635 4.21969 15.2526 5.40043 15.2526 6.63159Z"
+                      stroke="white"
+                      stroke-width="1.32632"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M16.5789 12.8603C18.2136 13.4638 19.2316 14.3126 19.2316 15.2526C19.2316 17.0838 15.372 18.5684 10.6105 18.5684C5.84905 18.5684 1.98947 17.0838 1.98947 15.2526C1.98947 14.3126 3.00742 13.4638 4.6421 12.8603"
+                      stroke="white"
+                      stroke-width="1.32632"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_104_605">
+                      <rect width="21.2211" height="21.2211" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
                 <p className="font-medium flex flex-col font-[Poppins]  ">
                   <span className="text-white text-[15px] ">Address</span>
                   <span className="text-[15px]  ">ST. ALBANS, NY. 11412</span>
