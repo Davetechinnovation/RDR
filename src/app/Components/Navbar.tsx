@@ -83,9 +83,11 @@ function Navbar() {
               className="w-[25px] cursor-pointer "
             />
           </div>
-          <button className="bg-[#B12D31] px-4 py-2 rounded-lg hover:scale-105 hover:bg-[#b12d31f3] duration-300 transition-all text-white cursor-pointer ">
-            Contact Us
-          </button>
+          <Link href="/contact">
+            <button className="bg-[#B12D31] px-4 py-2 rounded-lg hover:scale-105 hover:bg-[#b12d31f3] duration-300 transition-all text-white cursor-pointer">
+              Contact Us
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Overlay */}
@@ -380,9 +382,11 @@ function Navbar() {
                 className="w-[32px] cursor-pointer "
               />
             </div>
-            <button className="bg-[#B12D31] px-5 py-2 rounded-lg hover:scale-105 hover:bg-[#b12d31f3] duration-300 transition-all text-white cursor-pointer ">
-              Contact Us
-            </button>
+            <Link href="/contact">
+              <button className="bg-[#B12D31] px-5 py-2 rounded-lg hover:scale-105 hover:bg-[#b12d31f3] duration-300 transition-all text-white cursor-pointer ">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function page() {
   return (
@@ -102,9 +103,11 @@ function page() {
             just construction we deliver peace of mind. From project planning to
             completion.
           </p>
-          <button className="text-[16px] sm:text-[22px] bg-[#B12D31] cursor-pointer py-2 px-5 hover:scale-105 hover:bg-[#b12d31d3] transition-all duration-300">
-            Contact Us
-          </button>
+          <Link href="/contact">
+            <button className="text-[16px] sm:text-[22px] bg-[#B12D31] cursor-pointer py-2 px-5 hover:scale-105 hover:bg-[#b12d31d3] transition-all duration-300">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
 

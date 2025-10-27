@@ -137,9 +137,11 @@ function page() {
               ))}
             </div>
             <div className="flex justify-center pt-5">
-              <button className="text-white border-2 border-white cursor-pointer py-2 px-3 hover:bg-white hover:text-black transition-all duration-300">
-                View All Projects
-              </button>
+              <Link href="/projects">
+                <button className="text-white border-2 border-white cursor-pointer py-2 px-3 hover:bg-white hover:text-black transition-all duration-300">
+                  View All Projects
+                </button>
+              </Link>
             </div>
           </div>
         </div>

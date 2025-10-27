@@ -387,7 +387,7 @@ function page() {
             </p>
           </div>
           <div className=" max-w-[532px] w-full ">
-            <img src="/man1.png" alt="" />
+            <img src="/man1.webp" alt="" />
           </div>
         </div>
 
@@ -415,7 +415,7 @@ function page() {
             </p>
           </div>
           <div className=" max-w-[532px] w-full ">
-            <img src="/image2.jpg" alt="" />
+            <img src="/image2.webp" alt="" />
           </div>
         </div>
 
@@ -442,7 +442,7 @@ function page() {
             </p>
           </div>
           <div className=" max-w-[532px] w-full ">
-            <img src="/image3.jpg" alt="" />
+            <img src="/image3.webp" alt="" />
           </div>
         </div>
 
@@ -470,7 +470,7 @@ function page() {
             </p>
           </div>
           <div className=" max-w-[532px] w-full ">
-            <img src="/image4.jpg" alt="" />
+            <img src="/image4.webp" alt="" />
           </div>
         </div>
       </div>
