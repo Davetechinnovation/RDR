@@ -93,7 +93,7 @@ function Navbar() {
         {/* Mobile Menu Overlay */}
         {(isMobileMenuOpen || isAnimating) && (
           <div
-            className={`bg-[#B12D31] w-full fixed z-50 h-screen overflow-y-auto py-5 top-0 left-0 text-white ${animationClass}`}
+            className={`bg-[#B12D31] w-full fixed z-80 h-screen overflow-y-auto py-5 top-0 left-0 text-white ${animationClass}`}
           >
             <div className="flex justify-between items-center p-4">
               <img

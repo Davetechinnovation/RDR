@@ -53,7 +53,7 @@ function page() {
           </ul>
         </div>
 
-        <div className="w-full min-h-screen ">
+        <div className="w-full">
           <div className="relative px-1">
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex py-5">
