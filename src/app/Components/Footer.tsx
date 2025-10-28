@@ -110,7 +110,7 @@ function Footer() {
             </p>
             <p className="text-[14px] sm:text-[16px] ">
               <span className="text-[#FFCED0] font-bold ">Email:</span>{" "}
-              <span>info@rdr.com</span>{" "}
+              <span>Info@rdrgeneralconstruction.com</span>{" "}
             </p>
             <p className="text-[14px] sm:text-[16px] ">
               <span className="text-[#FFCED0] font-bold ">Cell Phone:</span>{" "}
