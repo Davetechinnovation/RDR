@@ -164,7 +164,8 @@ function page() {
           </ul>
         </div>
 
-        <div className="w-full">
+       
+      </div> <div className="w-full">
           <div className="relative px-1">
             <div className="overflow-hidden" ref={emblaRef3}>
               <div className="flex py-5">
@@ -192,7 +193,7 @@ function page() {
                     i4.webp
                   </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250pxx] sm:mr-4 mr-3 relative">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i5.webp" alt="" className="w-full" />
                   <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
                     i5.webp
@@ -281,7 +282,7 @@ function page() {
                     i9.webp
                   </div>
                 </div>
-                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250pxx] sm:mr-4 mr-3 relative">
+                <div className="flex-[0_0_calc((100%-40px)/5)] min-w-[250px] sm:mr-4 mr-3 relative">
                   <img src="i10.webp" alt="" className="w-full" />
                   <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 text-sm font-bold z-10 rounded">
                     i10.webp
@@ -348,7 +349,6 @@ function page() {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 }
