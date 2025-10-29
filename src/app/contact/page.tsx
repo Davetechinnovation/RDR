@@ -1,10 +1,79 @@
 "use client";
 
-import { Plus, Minus } from "lucide-react";
+import { Plus, Minus, Loader2 } from "lucide-react";
 import React, { useState } from "react";
+import { Toaster, toast } from 'sonner';
 
-function page() {
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+function Page() {
   const [expandedItems, setExpandedItems] = useState<number[]>([]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Basic validation
+    if (!formData.name || !formData.email || !formData.message) {
+      toast.error('Please fill in all fields');
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast.error('Please enter a valid email address');
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast.success('Message sent successfully!');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        throw new Error(data.error || 'Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      toast.error(error instanceof Error ? error.message : 'Failed to send message');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const toggleItem = (index: number) => {
     setExpandedItems(prev => 
@@ -13,8 +82,14 @@ function page() {
         : [...prev, index]
     );
   };
+
   return (
     <div>
+      <Toaster 
+        position="top-center"
+        richColors
+        className="w-auto"
+      />
       <div className="relative">
         <img
           src="/bg.webp"
@@ -43,39 +118,53 @@ function page() {
               <p className="border-3 border-[#B12D31] w-[50px] absolute bottom-0 left-0 "></p>
             </div>
 
-            <form action="" className="flex flex-col gap-5 py-5 ">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-5 py-5">
               <div>
                 <input
                   type="text"
-                  name="text"
-                  id=""
+                  name="name"
                   placeholder="Name"
-                  className="outline-none py-2 bg-[#F8F8F8] px-2 w-full "
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="outline-none py-2 bg-[#F8F8F8] px-2 w-full"
+                  disabled={isSubmitting}
                 />
               </div>
               <div>
                 <input
                   type="email"
                   name="email"
-                  id=""
                   placeholder="Email"
                   required
-                  className="outline-none py-2 bg-[#F8F8F8] px-2 w-full "
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="outline-none py-2 bg-[#F8F8F8] px-2 w-full"
+                  disabled={isSubmitting}
                 />
               </div>
               <div>
-                <input
-                  type="text"
-                  name="text"
-                  id=""
+                <textarea
+                  name="message"
                   placeholder="Message"
                   required
-                  className="outline-none py-2 pb-20 bg-[#F8F8F8] px-2 w-full "
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="outline-none py-2 bg-[#F8F8F8] px-2 w-full min-h-[120px]"
+                  disabled={isSubmitting}
                 />
               </div>
-              <div className="flex flex-col justify-end items-end ">
-                <button className="border-3 border-[#B12D31] px-7 py-[2px] font-semibold text-[14px] cursor-pointer hover:bg-gray-100 hover:scale-105 duration-300 transition-all ">
-                  Send Message
+              <div className="flex flex-col justify-end items-end">
+                <button 
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="border-3 border-[#B12D31] px-7 py-[2px] font-semibold text-[14px] cursor-pointer hover:bg-gray-100 hover:scale-105 duration-300 transition-all flex items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Sending...
+                    </>
+                  ) : 'Send Message'}
                 </button>
               </div>
             </form>
@@ -197,4 +286,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
