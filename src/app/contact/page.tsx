@@ -153,7 +153,7 @@ function Page() {
                   disabled={isSubmitting}
                 />
               </div>
-              <div className="flex flex-col justify-end items-end">
+              <div className="flex flex-col md:justify-end md:items-end justify-center items-center ">
                 <button 
                   type="submit"
                   disabled={isSubmitting}
