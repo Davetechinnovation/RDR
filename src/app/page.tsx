@@ -22,9 +22,12 @@ function page() {
             asbestos and lead abatement to demolition and full-scale
             construction.
           </p>
-          <button className=" text-[13px] sm:text-[16px] mt-3 bg-[#B12D31] sm:px-5 px-3 sm:py-3 py-2 rounded-[2px] hover:scale-105 hover:bg-[#b12d31ea] duration-300 transition-all text-white cursor-pointer ">
+          <Link  href="/contact" >
+            <button className=" text-[13px] sm:text-[16px] mt-3 bg-[#B12D31] sm:px-5 px-3 sm:py-3 py-2 rounded-[2px] hover:scale-105 hover:bg-[#b12d31ea] duration-300 transition-all text-white cursor-pointer ">
             Start A Project
           </button>
+          </Link>
+         
         </div>
       </div>
 
