@@ -1,0 +1,10 @@
+/* TEAM */
+  Developer: RDR General Construction Team
+  Site: https://rdrconstruction.com
+  Contact: info@rdrconstruction.com
+
+/* SITE */
+  Last update: 2025/10/29
+  Standards: HTML5, CSS3, JavaScript (ES6+)
+  Components: Next.js, React, TypeScript
+  Software: VSCode
