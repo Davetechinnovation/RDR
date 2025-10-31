@@ -25,9 +25,15 @@ export const metadata: Metadata = {
   description: defaultDescription,
   keywords: ["construction", "renovation", "New York", "general contractor", "home improvement", "construction services"],
   authors: [{ name: "RDR General Construction" }],
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.rdrgeneralconstruction.com'),
   alternates: {
     canonical: '/',
+  },
+  other: {
+    'geo.region': 'US-NY',
+    'geo.placename': 'New York',
+    'twitter:site': '@danraphservices',
+    'twitter:creator': '@danraphservices',
   },
   openGraph: {
     title: defaultTitle,
@@ -38,16 +44,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'rdr logo.webp',
-        width: 500,
-        height: 500,
-        alt: 'RDR General Construction Logo',
-      },
-      {
-        url: 'favicon.ico',
-        width: 64,
-        height: 64,
-        alt: 'RDR Favicon',
+        url: '/SEO.webp',
+        width: 1200,
+        height: 630,
+        alt: 'RDR General Construction - Professional renovation and construction services',
       },
     ],
   },
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: defaultTitle,
     description: defaultDescription,
-    images: ['rdr logo.webp'],
+    images: ['/SEO.webp'],
   },
   icons: {
     icon: [
@@ -113,12 +113,15 @@ export default function RootLayout({
 }
 
 function StructuredData() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.rdrgeneralconstruction.com';
+  
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": `${siteUrl}#business`,
     "name": "RDR General Construction",
-    "image": "/images/logo.jpg",
-    "url": process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+    "image": `${siteUrl}/rdr-logo.webp`,
+    "url": siteUrl,
     "telephone": "+17182770803",
     "priceRange": "$$",
     "address": {
@@ -127,18 +130,37 @@ function StructuredData() {
       "addressRegion": "NY",
       "addressCountry": "US"
     },
+    "sameAs": [
+      "https://x.com/danraphservices",
+      "https://www.instagram.com/danraphservices",
+      "https://www.tiktok.com/@danraphservices",
+      "https://www.facebook.com/share/1CF27NVZwA/"
+    ],
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       "opens": "08:00",
       "closes": "18:00"
+    },
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Construction and Renovation",
+        "description": "Professional construction, renovation, and abatement services in New York.",
+        "serviceType": "Construction Services",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "RDR General Construction"
+        }
+      }
     }
-  }
+  };
 
   return (
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
-  )
+  );
 }
