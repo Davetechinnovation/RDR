@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description: defaultDescription,
   keywords: ["construction", "renovation", "New York", "general contractor", "home improvement", "construction services"],
   authors: [{ name: "RDR General Construction" }],
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
   alternates: {
     canonical: '/',
   },
@@ -38,10 +38,16 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'RDR General Construction',
+        url: 'rdr logo.webp',
+        width: 500,
+        height: 500,
+        alt: 'RDR General Construction Logo',
+      },
+      {
+        url: 'favicon.ico',
+        width: 64,
+        height: 64,
+        alt: 'RDR Favicon',
       },
     ],
   },
@@ -49,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: defaultTitle,
     description: defaultDescription,
-    images: ['/images/og-image.jpg'],
+    images: ['rdr logo.webp'],
   },
   icons: {
     icon: [

@@ -205,10 +205,10 @@ function Navbar() {
                   </defs>
                 </svg>
 
-                <p className="font-medium flex flex-col font-[Poppins]  ">
-                  <span className="text-white text-[15px] ">Call us</span>
-                  <span className="text-[18px]  "> 718-277-0803</span>
-                </p>
+                <div className="font-medium flex flex-col font-[Poppins]">
+                  <span className="text-white text-[15px]">Call us</span>
+                  <a href="tel:718-277-0803" className="text-[18px] hover:underline">718-277-0803</a>
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -255,13 +255,12 @@ function Navbar() {
                   </defs>
                 </svg>
 
-                <p className="font-medium flex flex-col font-[Poppins]  ">
-                  <span className="text-white text-[15px] ">Mail us</span>
-                  <span className="text-[18px]  ">
-                    {" "}
+                <div className="font-medium flex flex-col font-[Poppins]">
+                  <span className="text-white text-[15px]">Mail us</span>
+                  <a href="mailto:Info@rdrgeneralconstruction.com" className="text-[18px] hover:underline">
                     Info@rdrgeneralconstruction.com
-                  </span>
-                </p>
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -318,20 +317,19 @@ function Navbar() {
         <div className="flex  justify-between lg:gap-20 md:gap-7 gap-5 ">
           <div className="flex items-center gap-2">
             <img src="/UserRectangle.webp " alt="" />
-            <p className="font-medium flex flex-col font-[Poppins]  ">
-              <span className="text-[#B12D31] text-[15px] ">Call us</span>
-              <span className="text-[18px]  "> 718-277-0803</span>
-            </p>
+            <div className="font-medium flex flex-col font-[Poppins]">
+              <span className="text-[#B12D31] text-[15px]">Call us</span>
+              <a href="tel:718-277-0803" className="text-[18px] hover:underline">718-277-0803</a>
+            </div>
           </div>
           <div className="flex items-center gap-2">
             <img src="/Envelope.webp " alt="" />
-            <p className="font-medium flex flex-col font-[Poppins]  ">
-              <span className="text-[#B12D31] text-[15px] ">Mail us</span>
-              <span className="text-[18px]  ">
-                {" "}
+            <div className="font-medium flex flex-col font-[Poppins]">
+              <span className="text-[#B12D31] text-[15px]">Mail us</span>
+              <a href="mailto:Info@rdrgeneralconstruction.com" className="text-[18px] hover:underline">
                 Info@rdrgeneralconstruction.com
-              </span>
-            </p>
+              </a>
+            </div>
           </div>
           <div className="flex items-center gap-2">
             <img src="/MapPinArea.webp" alt="" />

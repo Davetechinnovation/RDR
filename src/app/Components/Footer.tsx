@@ -120,21 +120,27 @@ function Footer() {
             Contact Info
           </h2>
           <div className="flex flex-col gap-3 py-2 ">
-            <p className="text-[14px] sm:text-[16px] ">
-              <span className="text-[#FFCED0] font-bold  ">Address:</span>{" "}
-              <span>199-02 LINDEN BLVD, UNIT #3 ST. ALBANS, NY. 11412</span>{" "}
+            <p className="text-[14px] sm:text-[16px]">
+              <span className="text-[#FFCED0] font-bold">Address:</span>{" "}
+              <span>199-02 LINDEN BLVD, UNIT #3 ST. ALBANS, NY. 11412</span>
             </p>
-            <p className="text-[14px] sm:text-[16px] ">
-              <span className="text-[#FFCED0] font-bold ">Email:</span>{" "}
-              <span>Info@rdrgeneralconstruction.com</span>{" "}
+            <p className="text-[14px] sm:text-[16px]">
+              <span className="text-[#FFCED0] font-bold">Email:</span>{" "}
+              <a href="mailto:Info@rdrgeneralconstruction.com" className="hover:underline">
+                Info@rdrgeneralconstruction.com
+              </a>
             </p>
-            <p className="text-[14px] sm:text-[16px] ">
-              <span className="text-[#FFCED0] font-bold ">Cell Phone:</span>{" "}
-              <span>917-795-6392, 6785580685, 347-684-6974</span>{" "}
+            <p className="text-[14px] sm:text-[16px]">
+              <span className="text-[#FFCED0] font-bold">Cell Phone:</span>{" "}
+              <span>
+                <a href="tel:917-795-6392" className="hover:underline">917-795-6392</a>,{" "}
+                <a href="tel:678-558-0685" className="hover:underline ml-1">678-558-0685</a>,{" "}
+                <a href="tel:347-684-6974" className="hover:underline ml-1">347-684-6974</a>
+              </span>
             </p>
-            <p className="text-[14px] sm:text-[16px] ">
-              <span className="text-[#FFCED0] font-bold ">Work Time:</span>{" "}
-              <span>Mon-Fri: 08.00 - 16.00</span>{" "}
+            <p className="text-[14px] sm:text-[16px]">
+              <span className="text-[#FFCED0] font-bold">Work Time:</span>{" "}
+              <span>Mon-Fri: 08.00 - 16.00</span>
             </p>
           </div>
         </div>
