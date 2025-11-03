@@ -122,12 +122,14 @@ function StructuredData() {
     "name": "RDR General Construction",
     "image": `${siteUrl}/rdr-logo.webp`,
     "url": siteUrl,
-    "telephone": "+17182770803",
+    "telephone": "+19177895392",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "561 WEST 141ST STREET, APT. 79",
       "addressLocality": "New York",
       "addressRegion": "NY",
+      "postalCode": "10031",
       "addressCountry": "US"
     },
     "sameAs": [
