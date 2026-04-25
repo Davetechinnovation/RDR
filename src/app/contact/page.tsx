@@ -104,8 +104,13 @@ function Page() {
       </div>
 
       <div className="md:px-20 sm:px-10 px-5 py-10 ">
-        <h1 className="text-[18px] sm:text-[30px] md:text-[40px] font-bold text-[#B12D31]  ">
-          Call: 718-277-0803
+        <h1 className="text-[18px] sm:text-[22px] md:text-[28px] font-bold text-[#B12D31] flex flex-wrap items-center gap-x-2">
+          <span>Call:</span>
+          <a href="tel:347-377-1137" className="hover:underline">347-377-1137</a>
+          <span>/</span>
+          <a href="tel:678-558-0685" className="hover:underline">678-558-0685</a>
+          <span>/</span>
+          <a href="tel:917-795-6392" className="hover:underline">917-795-6392</a>
         </h1>
         <p>We Can’t Wait to Make Your Ideas a Reality</p>
 

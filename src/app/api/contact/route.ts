@@ -36,7 +36,7 @@ export async function POST(request: Request) {
     // Prepare email options
     const mailOptions = {
       from: process.env.ZOHO_EMAIL, // Sender address (your Zoho email)
-      to: process.env.ZOHO_EMAIL, // List of recipients (your email)
+      to: `${process.env.ZOHO_EMAIL}, info@rdrgeneralconstruction.com, info@maragroup18.com, maraengineer2@gmail.com`, // List of recipients
       replyTo: email, // User's email as reply-to
       subject: `New Contact Form Submission (RDR General Construction) from ${name}`,
       text: `

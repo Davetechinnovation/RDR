@@ -122,20 +122,26 @@ function Footer() {
           <div className="flex flex-col gap-3 py-2 ">
             <p className="text-[14px] sm:text-[16px]">
               <span className="text-[#FFCED0] font-bold">Address:</span>{" "}
-              <span>199-02 LINDEN BLVD, UNIT #3 ST. ALBANS, NY. 11412</span>
+              <span>561 West 141st Street, Suite# 79, New York, NY 10031</span>
             </p>
-            <p className="text-[14px] sm:text-[16px]">
-              <span className="text-[#FFCED0] font-bold">Email:</span>{" "}
-              <a href="mailto:Info@rdrgeneralconstruction.com" className="hover:underline">
-                Info@rdrgeneralconstruction.com
+            <p className="text-[14px] sm:text-[16px] flex flex-col gap-1 mt-1">
+              <span className="text-[#FFCED0] font-bold">Email:</span>
+              <a href="mailto:info@rdrgeneralconstruction.com" className="hover:underline">
+                info@rdrgeneralconstruction.com
+              </a>
+              <a href="mailto:info@maragroup18.com" className="hover:underline">
+                info@maragroup18.com
+              </a>
+              <a href="mailto:maraengineer2@gmail.com" className="hover:underline">
+                maraengineer2@gmail.com
               </a>
             </p>
-            <p className="text-[14px] sm:text-[16px]">
+            <p className="text-[14px] sm:text-[16px] mt-1">
               <span className="text-[#FFCED0] font-bold">Cell Phone:</span>{" "}
               <span>
-                <a href="tel:917-795-6392" className="hover:underline">917-795-6392</a>,{" "}
+                <a href="tel:347-377-1137" className="hover:underline">347-377-1137</a>,{" "}
                 <a href="tel:678-558-0685" className="hover:underline ml-1">678-558-0685</a>,{" "}
-                <a href="tel:347-684-6974" className="hover:underline ml-1">347-684-6974</a>
+                <a href="tel:917-795-6392" className="hover:underline ml-1">917-795-6392</a>
               </span>
             </p>
             <p className="text-[14px] sm:text-[16px]">

@@ -14,16 +14,16 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
-const defaultTitle = 'RDR General Construction | Professional Construction Services'
-const defaultDescription = 'RDR General Construction - Professional construction, renovation, and abatement services in New York. Licensed, insured, and certified for all your construction needs.'
+const defaultTitle = 'RDR General Construction | Top Construction & Renovation Services in NY'
+const defaultDescription = 'Looking for reliable construction and renovation in New York? RDR General Construction offers expert abatement, remodeling, and general contractor services. Licensed, insured, and certified for your residential and commercial projects.'
 
 export const metadata: Metadata = {
   title: {
     default: defaultTitle,
-    template: "%s | RDR General Construction"
+    template: "%s | RDR General Construction NY"
   },
   description: defaultDescription,
-  keywords: ["construction", "renovation", "New York", "general contractor", "home improvement", "construction services"],
+  keywords: ["RDR General Construction", "construction company NY", "general contractor New York", "home improvement", "renovation services NY", "commercial construction", "residential remodeling", "abatement services NY", "building contractors"],
   authors: [{ name: "RDR General Construction" }],
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.rdrgeneralconstruction.com'),
   alternates: {
@@ -122,11 +122,11 @@ function StructuredData() {
     "name": "RDR General Construction",
     "image": `${siteUrl}/rdr-logo.webp`,
     "url": siteUrl,
-    "telephone": "+19177895392",
+    "telephone": "+13473771137",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "561 WEST 141ST STREET, APT. 79",
+      "streetAddress": "561 WEST 141ST STREET, SUITE# 79",
       "addressLocality": "New York",
       "addressRegion": "NY",
       "postalCode": "10031",

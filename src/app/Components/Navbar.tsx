@@ -207,7 +207,7 @@ function Navbar() {
 
                 <div className="font-medium flex flex-col font-[Poppins]">
                   <span className="text-white text-[15px]">Call us</span>
-                  <a href="tel:718-277-0803" className="text-[18px] hover:underline">718-277-0803</a>
+                  <a href="tel:347-377-1137" className="text-[18px] hover:underline">347-377-1137</a>
                 </div>
               </div>
               <div className="flex items-center gap-2">
@@ -257,8 +257,8 @@ function Navbar() {
 
                 <div className="font-medium flex flex-col font-[Poppins]">
                   <span className="text-white text-[15px]">Mail us</span>
-                  <a href="mailto:Info@rdrgeneralconstruction.com" className="text-[18px] hover:underline">
-                    Info@rdrgeneralconstruction.com
+                  <a href="mailto:info@rdrgeneralconstruction.com" className="text-[16px] hover:underline">
+                    info@rdrgeneralconstruction.com
                   </a>
                 </div>
               </div>
@@ -298,7 +298,7 @@ function Navbar() {
                 </svg>
                 <p className="font-medium flex flex-col font-[Poppins]  ">
                   <span className="text-white text-[15px] ">Address</span>
-                  <span className="text-[15px]  ">ST. ALBANS, NY. 11412</span>
+                  <span className="text-[14px]  ">561 W 141st St, Suite# 79, NY 10031</span>
                 </p>
               </div>
             </div>
@@ -319,15 +319,15 @@ function Navbar() {
             <img src="/UserRectangle.webp " alt="" />
             <div className="font-medium flex flex-col font-[Poppins]">
               <span className="text-[#B12D31] text-[15px]">Call us</span>
-              <a href="tel:718-277-0803" className="text-[18px] hover:underline">718-277-0803</a>
+              <a href="tel:347-377-1137" className="text-[18px] hover:underline">347-377-1137</a>
             </div>
           </div>
           <div className="flex items-center gap-2">
             <img src="/Envelope.webp " alt="" />
             <div className="font-medium flex flex-col font-[Poppins]">
               <span className="text-[#B12D31] text-[15px]">Mail us</span>
-              <a href="mailto:Info@rdrgeneralconstruction.com" className="text-[18px] hover:underline">
-                Info@rdrgeneralconstruction.com
+              <a href="mailto:info@rdrgeneralconstruction.com" className="text-[16px] hover:underline">
+                info@rdrgeneralconstruction.com
               </a>
             </div>
           </div>
@@ -335,7 +335,7 @@ function Navbar() {
             <img src="/MapPinArea.webp" alt="" />
             <p className="font-medium flex flex-col font-[Poppins]  ">
               <span className="text-[#B12D31] text-[15px] ">Address</span>
-              <span className="text-[18px]  ">ST. ALBANS, NY. 11412</span>
+              <span className="text-[16px]  ">561 W 141st St, Suite# 79, NY 10031</span>
             </p>
           </div>
         </div>
