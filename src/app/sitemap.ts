@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.rdrgeneralconstruction.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ['', '/about', '/services', '/projects', '/contact'].map((route) => ({
