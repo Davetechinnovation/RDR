@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏗️ RDR General Construction — Official Website
 
-## Getting Started
+> A professional, fully responsive business website built for **RDR General Construction**, a trusted construction and remediation company based in New York, NY.
 
-First, run the development server:
+🌐 **Live Site:** [www.rdrgeneralconstruction.com](https://www.rdrgeneralconstruction.com)
+
+---
+
+## 📌 About the Project
+
+This is a client project built for **RDR General Construction**, a company with 20+ years of experience specializing in:
+
+- Asbestos & Lead Abatement
+- Mold Remediation
+- Demolition
+- Full-Scale Construction & Renovation
+
+The website serves as the company's digital presence — showcasing their services, completed projects, client testimonials, and providing a way for potential clients to get in touch.
+
+---
+
+## 🖥️ Pages
+
+| Page | Description |
+|------|-------------|
+| **Home** | Hero section, company overview, project highlights, and testimonials |
+| **About** | Company story, values, and experience |
+| **Services** | Detailed breakdown of all construction and remediation services |
+| **Projects** | Gallery of completed projects |
+| **Contact** | Contact form and company details |
+
+---
+
+## ⚙️ Tech Stack
+
+| Technology | Usage |
+|------------|-------|
+| **Next.js 14** (App Router) | Frontend framework |
+| **TypeScript** | Type-safe development |
+| **Tailwind CSS** | Styling and responsive design |
+| **Vercel** | Deployment and hosting |
+| **Biome** | Linting and code formatting |
+
+---
+
+## ✨ Features
+
+- ✅ Fully responsive across all devices (mobile, tablet, desktop)
+- ✅ SEO optimized with proper meta tags
+- ✅ Fast performance with Next.js App Router and image optimization
+- ✅ Clean, professional UI matching the client's brand
+- ✅ Contact section with phone, email, and address
+- ✅ Project gallery showcasing real completed work
+- ✅ Client testimonials section
+- ✅ Deployed on Vercel for fast global performance
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/Davetechinnovation/RDR.git
+
+# Navigate into the project
+cd RDR
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```
+RDR/
+├── public/          # Static assets (images, icons)
+├── src/
+│   └── app/         # Next.js App Router pages and components
+├── next.config.ts   # Next.js configuration
+├── tailwind.config  # Tailwind CSS configuration
+├── biome.json       # Biome linter config
+└── tsconfig.json    # TypeScript configuration
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌍 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is deployed on **Vercel**.
 
-## Deploy on Vercel
+To deploy your own fork:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 👨‍💻 Developer
+
+Built with ❤️ by **Udoka Dandave**
+
+- 🌐 Portfolio: [dandys-portfolio.vercel.app](https://dandys-portfolio.vercel.app)
+- 🐦 Twitter: [@Davetechinnov](https://x.com/Davetechinnov)
+- 📸 Instagram: [@davetech_innovation](https://www.instagram.com/davetech_innovation/)
+- 💻 GitHub: [@Davetechinnovation](https://github.com/Davetechinnovation)
+
+---
+
+## 📄 License
+
+This project was built for a client and is not open for redistribution or reuse without permission.
